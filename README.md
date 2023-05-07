@@ -1,5 +1,10 @@
-# Welcome to GitHub Desktop!
+from flask import Flask
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+app = Flask(__name__)
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+@app.route("/")
+def hello_world():
+    return "<p>Hello, This is a test</p>"
+  
+if __name__ == '__main__':
+  app.run()
