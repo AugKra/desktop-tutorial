@@ -1,10 +1,9 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, This is a test</p>"
-  
-if __name__ == '__main__':
-  app.run()
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Static Website</title>
+  </head>
+  <body>
+    <h1>Hello, This is a test</h1>
+  </body>
+</html>
